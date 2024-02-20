@@ -1,0 +1,20 @@
+query ReverseGeocode($lat: Float!, $lng: Float!) {
+  reverseGeocode(location: { lat: $lat, lng: $lng }) {
+    address
+    point {
+      lat
+      lng
+    }
+  }
+}
+
+query GetPlaces($query: String!) {
+  getPlaces(keyword: $query) {
+    address
+    title
+    point {
+      lat
+      lng
+    }
+  }
+}
