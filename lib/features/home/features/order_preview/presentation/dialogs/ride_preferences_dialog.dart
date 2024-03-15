@@ -47,7 +47,7 @@ class _RidePreferencesDialogState extends State<RidePreferencesDialog> {
     return AppResponsiveDialog(
       onBackPressed: () => Navigator.of(context).pop(),
       header: (
-        Ionicons.options,
+      Icon(Ionicons.options),
         context.translate.ridePreferences,
         null,
       ),

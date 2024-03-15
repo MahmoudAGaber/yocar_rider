@@ -23,11 +23,11 @@ class NoticeBar extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   child: Row(
                     children: [
-                      const Icon(
-                        Ionicons.time,
-                        color: ColorPalette.neutral70,
-                      ),
-                      const SizedBox(width: 8),
+                      // const Icon(
+                      //   Ionicons.time,
+                      //   color: ColorPalette.neutral70,
+                      // ),
+                      // const SizedBox(width: 8),
                       Expanded(
                         child: StreamBuilder(
                           stream: Stream.periodic(const Duration(seconds: 1)),
@@ -36,8 +36,8 @@ class NoticeBar extends StatelessWidget {
                               value.order.expectedAt.isAfter(DateTime.now())
                                   ? context.translate.driverShouldAriveInNotice
                                   : context.translate.driverShouldHaveArrivedNotice,
-                              style: context.labelMedium?.copyWith(
-                                color: ColorPalette.neutral99,
+                              style: context.titleSmall?.copyWith(
+                                color: ColorPalette.neutral0,
                               ),
                             );
                           },
@@ -74,16 +74,16 @@ class NoticeBar extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   child: Row(
                     children: [
-                      const Icon(
-                        Ionicons.time,
-                        color: ColorPalette.error60,
-                      ),
-                      const SizedBox(width: 8),
+                      // const Icon(
+                      //   Ionicons.time,
+                      //   color: ColorPalette.error60,
+                      // ),
+                      // const SizedBox(width: 8),
                       Expanded(
                         child: Text(
                           context.translate.driverArrivedNotice,
-                          style: context.labelMedium?.copyWith(
-                            color: ColorPalette.neutral99,
+                          style: context.titleSmall?.copyWith(
+                            color: ColorPalette.neutral0,
                           ),
                         ),
                       ),
@@ -96,16 +96,16 @@ class NoticeBar extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                   child: Row(
                     children: [
-                      const Icon(
-                        Ionicons.time,
-                        color: ColorPalette.neutral70,
-                      ),
-                      const SizedBox(width: 8),
+                      // const Icon(
+                      //   Ionicons.time,
+                      //   color: ColorPalette.neutral70,
+                      // ),
+                      // const SizedBox(width: 8),
                       Expanded(
                         child: Text(
                           context.translate.headingToDestination,
-                          style: context.labelMedium?.copyWith(
-                            color: ColorPalette.neutral99,
+                          style: context.titleSmall?.copyWith(
+                            color: ColorPalette.neutral0,
                           ),
                         ),
                       ),

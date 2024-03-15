@@ -145,6 +145,23 @@ class SEs extends S {
     return '$distanceString kilómetros';
   }
 
+
+  @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message'; @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+  @override
+  String get backButton=> 'Back';
+
   @override
   String get welcomeSubtitle => 'Servicio de taxi diseñado para su comodidad tenga Viajes con sus conductores favoritos y seleccione sus preferencias de viaje';
 
@@ -201,6 +218,9 @@ class SEs extends S {
 
   @override
   String get confirm => 'Confirmar';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => 'Confirmar entrega';
@@ -935,6 +955,8 @@ class SEs extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'El conductor debería llegar en cualquier momento.';
+
+
 
   @override
   String get deleteAccount => 'Borrar cuenta';

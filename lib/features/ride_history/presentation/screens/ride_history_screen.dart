@@ -1,5 +1,7 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rider_flutter/config/locator/locator.dart';
 import 'package:rider_flutter/config/router/app_router.dart';
@@ -38,17 +40,27 @@ class _RideHistoryScreenState extends State<RideHistoryScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              context.responsive(
-                AppBackButton(onPressed: () {
-                  context.router.pop();
-                }),
-                xl: const SizedBox.shrink(),
+              Row(
+                children: [
+                  context.responsive(
+                    AppBackButton(onPressed: () {
+                      context.router.pop();
+                    }),
+                    xl: const SizedBox.shrink(),
+                  ),
+                  SizedBox(width: 4,),
+                  Text(context.translate.backButton,
+                    style: context.bodyLarge,
+                  ),
+                  SizedBox(height: context.responsive(16, xl: 84)),
+                  SizedBox(width: MediaQuery.of(context).size.width*.24,),
+                  Text(
+                    context.translate.rideHistory,
+                    style: context.titleMedium,
+                  ),
+                ],
               ),
-              SizedBox(height: context.responsive(16, xl: 84)),
-              Text(
-                context.translate.rideHistory,
-                style: context.headlineSmall,
-              ),
+
               const SizedBox(height: 24),
               Expanded(
                 child: BlocBuilder<RideHistoryBloc, RideHistoryState>(builder: (context, state) {

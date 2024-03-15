@@ -7,6 +7,24 @@ class SHi extends S {
   SHi([String locale = 'hi']) : super(locale);
 
   @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message';
+
+  @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+  @override
+  String get backButton => 'Back';
+
+  @override
   String get welcomeTitle => 'ऐप में आपका स्वागत है';
 
   @override
@@ -201,6 +219,9 @@ class SHi extends S {
 
   @override
   String get confirm => 'पुष्टि करना';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => 'ड्रॉप-ऑफ़ की पुष्टि करें';
@@ -935,6 +956,8 @@ class SHi extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'ड्राइवर अब किसी भी समय आ जाना चाहिए';
+
+
 
   @override
   String get deleteAccount => 'खाता हटा दो';

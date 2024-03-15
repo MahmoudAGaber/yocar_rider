@@ -64,6 +64,9 @@ class SBn extends S {
   String get cancellationFee => 'বাতিল ফি';
 
   @override
+  String get backButton=> 'Back';
+
+  @override
   String get withdraw => 'প্রত্যাহার করুন';
 
   @override
@@ -146,6 +149,23 @@ class SBn extends S {
   }
 
   @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message';
+
+  @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+
+
+  @override
   String get welcomeSubtitle => 'আপনার আরামের জন্য ডিজাইন করা ট্যাক্সি পরিষেবা আপনার পছন্দের ড্রাইভারদের সাথে ট্রিপ করুন এবং আপনার রাইডের পছন্দগুলি নির্বাচন করুন৷';
 
   @override
@@ -201,6 +221,9 @@ class SBn extends S {
 
   @override
   String get confirm => 'নিশ্চিত করুন';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => 'ড্রপ-অফ নিশ্চিত করুন';
@@ -935,6 +958,7 @@ class SBn extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'ড্রাইভার এখন যে কোন মুহূর্তে পৌঁছাতে হবে';
+
 
   @override
   String get deleteAccount => 'হিসাব মুছে ফেলা';

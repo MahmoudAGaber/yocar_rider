@@ -7,6 +7,24 @@ class SHy extends S {
   SHy([String locale = 'hy']) : super(locale);
 
   @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message';
+
+  @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+  @override
+  String get backButton => 'Back';
+
+  @override
   String get welcomeTitle => 'Բարի գալուստ հավելված';
 
   @override
@@ -201,6 +219,9 @@ class SHy extends S {
 
   @override
   String get confirm => 'Հաստատել';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => 'Հաստատեք դուրս գալը';
@@ -935,6 +956,7 @@ class SHy extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'Վարորդը պետք է ժամանի ցանկացած պահի';
+
 
   @override
   String get deleteAccount => 'Հաշիվը ջնջել';

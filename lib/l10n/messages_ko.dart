@@ -7,6 +7,9 @@ class SKo extends S {
   SKo([String locale = 'ko']) : super(locale);
 
   @override
+  String get backButton => 'Back';
+
+  @override
   String get welcomeTitle => '앱에 오신 것을 환영합니다';
 
   @override
@@ -146,6 +149,20 @@ class SKo extends S {
   }
 
   @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message'; @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+
+  @override
   String get welcomeSubtitle => '귀하의 편안함을 위해 설계된 택시 서비스는 귀하가 좋아하는 운전자와 함께 여행하고 선호하는 차량 서비스를 선택합니다';
 
   @override
@@ -201,6 +218,9 @@ class SKo extends S {
 
   @override
   String get confirm => '확인하다';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => '하차 확인';
@@ -935,6 +955,7 @@ class SKo extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => '지금 당장 운전기사가 도착해야 합니다';
+
 
   @override
   String get deleteAccount => '계정 삭제';

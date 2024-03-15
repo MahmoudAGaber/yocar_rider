@@ -43,7 +43,7 @@ class _FavoriteLocationsListScreenState extends State<FavoriteLocationsListScree
           children: [
             AppTopBar(
               title: context.translate.favoriteLocations,
-              subtitle: context.translate.favoriteLocationsSubtitle,
+             // subtitle: context.translate.favoriteLocationsSubtitle,
             ),
             const SizedBox(height: 32),
             Expanded(

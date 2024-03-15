@@ -6,6 +6,25 @@ import 'messages.dart';
 class SFr extends S {
   SFr([String locale = 'fr']) : super(locale);
 
+
+  @override
+  String get call => 'appel';
+
+  @override
+  String get message => 'Message';
+
+  @override
+  String get cancelMyRide => 'Annuler mon trajet';
+
+  @override
+  String get waitMyRide => 'Attends mon trajet';
+
+  @override
+  String get cancelTrip => 'Annuler le voyage';
+
+  @override
+  String get backButton=> 'Dos';
+
   @override
   String get welcomeTitle => 'Bienvenue sur l\'application';
 
@@ -201,6 +220,9 @@ class SFr extends S {
 
   @override
   String get confirm => 'Confirmer';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => 'Confirmer le dépôt';
@@ -692,10 +714,10 @@ class SFr extends S {
   String get yourBalance => 'Votre solde';
 
   @override
-  String get rideCancellation => 'Annulation du trajet';
+  String get rideCancellation => 'es-tu sûr?';
 
   @override
-  String get cancelRideMessage => 'Etes-vous sûr de vouloir annuler votre course ?';
+  String get cancelRideMessage => 'des frais peuvent s\'appliquer lors de l\'annulation';
 
   @override
   String get cancelRideSuccess => 'Le trajet a été annulé avec succès';
@@ -935,6 +957,8 @@ class SFr extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'Le chauffeur devrait arriver à tout moment.';
+
+
 
   @override
   String get deleteAccount => 'Supprimer le compte';

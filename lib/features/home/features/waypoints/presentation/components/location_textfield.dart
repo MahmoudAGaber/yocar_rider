@@ -57,7 +57,7 @@ class _LocationTextfieldState extends State<LocationTextfield> {
       duration: const Duration(milliseconds: 200),
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        color: ColorPalette.primary99,
+       // color: ColorPalette.primary99,
         border: Border.all(
           color: isSelected ? ColorPalette.primary50 : ColorPalette.primary95,
           width: 1,
@@ -70,12 +70,12 @@ class _LocationTextfieldState extends State<LocationTextfield> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  labelText(context),
-                  style: context.bodySmall?.copyWith(
-                    color: labelColor(context),
-                  ),
-                ),
+                // Text(
+                //   labelText(context),
+                //   style: context.bodySmall?.copyWith(
+                //     color: labelColor(context),
+                //   ),
+                // ),
                 TextFormField(
                   onChanged: (newValue) {
                     widget.onChanged(newValue);
@@ -86,7 +86,8 @@ class _LocationTextfieldState extends State<LocationTextfield> {
                   focusNode: focusNode,
                   controller: _controller,
                   decoration: InputDecoration(
-                    isCollapsed: true,
+                    contentPadding:EdgeInsets.only(top: 6),
+                    hintStyle: TextStyle(height:2.2,fontWeight: FontWeight.w500,fontSize: 16),
                     hintText: hintText(context),
                     suffix: Transform.translate(
                       offset: const Offset(0, -8),
@@ -142,6 +143,8 @@ class _LocationTextfieldState extends State<LocationTextfield> {
                     border: InputBorder.none,
                     enabledBorder: InputBorder.none,
                     focusedBorder: InputBorder.none,
+                    prefixIcon: prefixIcon(context),
+
                   ),
                 ),
               ],
@@ -164,4 +167,8 @@ class _LocationTextfieldState extends State<LocationTextfield> {
       : ((widget.index < (widget.totalCount - 1))
           ? context.translate.enterStopPoint
           : context.translate.enterDropoffPoint);
+
+  Widget prefixIcon(BuildContext context) => widget.index == 0
+      ? Icon(Icons.my_location,color: Colors.red,)
+      : ((widget.index < (widget.totalCount - 1)) ? Icon(Icons.location_on_rounded) : Icon(Icons.location_on_rounded,color: Theme.of(context).primaryColor,));
 }

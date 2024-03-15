@@ -6,6 +6,10 @@ import 'messages.dart';
 class SIt extends S {
   SIt([String locale = 'it']) : super(locale);
 
+
+  @override
+  String get backButton => 'Back';
+
   @override
   String get welcomeTitle => 'Benvenuto nell\'app';
 
@@ -145,6 +149,20 @@ class SIt extends S {
     return '$distanceString km';
   }
 
+
+  @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message'; @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
   @override
   String get welcomeSubtitle => 'Il servizio taxi progettato per il tuo comfort offre viaggi con i tuoi autisti preferiti e seleziona le tue preferenze di corsa';
 
@@ -201,6 +219,9 @@ class SIt extends S {
 
   @override
   String get confirm => 'Confermare';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => 'Conferma il ritiro';
@@ -692,10 +713,10 @@ class SIt extends S {
   String get yourBalance => 'Il tuo bilancio';
 
   @override
-  String get rideCancellation => 'Cancellazione della corsa';
+  String get rideCancellation => 'sei sicuro?';
 
   @override
-  String get cancelRideMessage => 'Sei sicuro di voler annullare la tua corsa?';
+  String get cancelRideMessage => 'potrebbero essere applicate delle commissioni in caso di annullamento';
 
   @override
   String get cancelRideSuccess => 'La corsa è stata annullata con successo';
@@ -935,6 +956,7 @@ class SIt extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'L\'autista dovrebbe arrivare da un momento all\'altro';
+
 
   @override
   String get deleteAccount => 'Eliminare l\'account';

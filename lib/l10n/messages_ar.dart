@@ -7,6 +7,24 @@ class SAr extends S {
   SAr([String locale = 'ar']) : super(locale);
 
   @override
+  String get call => 'اتصل';
+
+  @override
+  String get message => 'رسالة';
+
+  @override
+  String get cancelMyRide => 'إلغاء رحلتي';
+
+  @override
+  String get waitMyRide => 'انتظر رحلتي';
+
+  @override
+  String get cancelTrip => 'إلغاء الرحلة';
+
+  @override
+  String get backButton=> 'رجوع';
+
+  @override
   String get welcomeTitle => 'مرحبا بكم في التطبيق';
 
   @override
@@ -201,6 +219,9 @@ class SAr extends S {
 
   @override
   String get confirm => 'يتأكد';
+
+  @override
+  String get confirmLocation => 'تأكيد الموقع';
 
   @override
   String get confirmDropoff => 'تأكيد النزول';
@@ -692,10 +713,10 @@ class SAr extends S {
   String get yourBalance => 'رصيدك';
 
   @override
-  String get rideCancellation => 'إلغاء الرحلة';
+  String get rideCancellation => 'هل انت متاكد؟';
 
   @override
-  String get cancelRideMessage => 'هل أنت متأكد أنك تريد إلغاء رحلتك؟';
+  String get cancelRideMessage => 'قد يتم تطبيق رسوم عند الإلغاء';
 
   @override
   String get cancelRideSuccess => 'تم إلغاء الرحلة بنجاح';
@@ -934,7 +955,8 @@ class SAr extends S {
   String get driverShouldAriveInNotice => 'من المتوقع أن يصل السائق';
 
   @override
-  String get driverShouldHaveArrivedNotice => 'ينبغي أن يصل السائق في أي لحظة الآن';
+  String get driverShouldHaveArrivedNotice => 'ستصل في أي لحظة الآن';
+
 
   @override
   String get deleteAccount => 'حذف الحساب';

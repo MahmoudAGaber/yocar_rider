@@ -6,6 +6,10 @@ import 'messages.dart';
 class SJa extends S {
   SJa([String locale = 'ja']) : super(locale);
 
+
+  @override
+  String get backButton => 'Back';
+
   @override
   String get welcomeTitle => 'アプリへようこそ';
 
@@ -146,6 +150,20 @@ class SJa extends S {
   }
 
   @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message'; @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+
+  @override
   String get welcomeSubtitle => '快適さを追求したタクシー サービスは、お気に入りのドライバーと乗車し、好みの乗り物を選択できます';
 
   @override
@@ -201,6 +219,9 @@ class SJa extends S {
 
   @override
   String get confirm => '確認する';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => '降車の確認';
@@ -935,6 +956,7 @@ class SJa extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'ドライバーは今すぐ到着するはずです';
+
 
   @override
   String get deleteAccount => 'アカウントを削除する';

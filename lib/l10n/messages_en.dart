@@ -7,6 +7,24 @@ class SEn extends S {
   SEn([String locale = 'en']) : super(locale);
 
   @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message';
+
+  @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+  @override
+  String get backButton=> 'Back';
+
+  @override
   String get welcomeTitle => 'Welcome to YOCAR';
 
   @override
@@ -145,6 +163,7 @@ class SEn extends S {
     return '$distanceString km';
   }
 
+
   @override
   String get welcomeSubtitle => 'We\'re thrilled to have you on board.YO CAR is your trusted partner for convenient and affordable rides. Whether you\'re heading to work, meeting friends, or exploring the city, we\'ve got your ride covered."';
 
@@ -177,10 +196,10 @@ class SEn extends S {
   String get whereIsYourDestination => 'Where is your destination?';
 
   @override
-  String get whereAreYouGoing => 'Where are you going?';
+  String get whereAreYouGoing => 'Where would you go?';
 
   @override
-  String get selectDestinations => 'Your route';
+  String get selectDestinations => 'Select Address';
 
   @override
   String get pickupPoint => 'Pick-up point';
@@ -204,6 +223,9 @@ class SEn extends S {
   String get confirm => 'Confirm';
 
   @override
+  String get confirmLocation => 'Confirm Location';
+
+  @override
   String get confirmDropoff => 'Confirm drop-off';
 
   @override
@@ -216,7 +238,7 @@ class SEn extends S {
   String get noResults => 'No results';
 
   @override
-  String get bookNow => 'Book Now';
+  String get bookNow => 'Ride Now';
 
   @override
   String get cash => 'Cash';
@@ -289,7 +311,8 @@ class SEn extends S {
   String get rideRequested => 'Ride requested';
 
   @override
-  String get searchingForAnOnlineDriver => 'Searching for an online driver...';
+  //String get searchingForAnOnlineDriver => 'Searching for an online driver...';
+  String get searchingForAnOnlineDriver => 'Looking for a driver...';
 
   @override
   String get cancelRide => 'Cancel ride';
@@ -454,7 +477,7 @@ class SEn extends S {
   String get saveChanges => 'Save changes';
 
   @override
-  String get rideHistory => 'Ride History';
+  String get rideHistory => 'Rides';
 
   @override
   String get scheduledRides => 'Scheduled rides';
@@ -693,10 +716,10 @@ class SEn extends S {
   String get yourBalance => 'Your balance';
 
   @override
-  String get rideCancellation => 'Ride Cancellation';
+  String get rideCancellation => 'Are you sure?';
 
   @override
-  String get cancelRideMessage => 'Are you sure you want to cancel your ride?';
+  String get cancelRideMessage => 'Fees may apply when canceling';
 
   @override
   String get cancelRideSuccess => 'Ride has been canceled successfully';
@@ -935,7 +958,8 @@ class SEn extends S {
   String get driverShouldAriveInNotice => 'Driver is estimated to arrive in';
 
   @override
-  String get driverShouldHaveArrivedNotice => 'Driver should be arrived in any moment now';
+  String get driverShouldHaveArrivedNotice => 'Arriving in any moment now';
+
 
   @override
   String get deleteAccount => 'Delete Account';

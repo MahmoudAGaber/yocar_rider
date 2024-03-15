@@ -6,6 +6,25 @@ import 'messages.dart';
 class SMs extends S {
   SMs([String locale = 'ms']) : super(locale);
 
+
+  @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message';
+
+  @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+  @override
+  String get backButton => 'Back';
+
   @override
   String get welcomeTitle => 'Welcome to the app';
 
@@ -201,6 +220,9 @@ class SMs extends S {
 
   @override
   String get confirm => 'Confirm';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => 'Confirm drop-off';
@@ -453,7 +475,7 @@ class SMs extends S {
   String get saveChanges => 'Save changes';
 
   @override
-  String get rideHistory => 'Ride History';
+  String get rideHistory => 'RIDES';
 
   @override
   String get scheduledRides => 'Scheduled rides';
@@ -692,7 +714,7 @@ class SMs extends S {
   String get yourBalance => 'Your balance';
 
   @override
-  String get rideCancellation => 'Ride Cancellation';
+  String get rideCancellation => 'Are you sure?';
 
   @override
   String get cancelRideMessage => 'Are you sure you want to cancel your ride?';
@@ -935,6 +957,7 @@ class SMs extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'Driver should be arrived in any moment now';
+
 
   @override
   String get deleteAccount => 'Delete Account';

@@ -6,6 +6,23 @@ import 'messages.dart';
 class SFi extends S {
   SFi([String locale = 'fi']) : super(locale);
 
+
+  @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message'; @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+  @override
+  String get backButton=> 'Back';
+
   @override
   String get welcomeTitle => 'Tervetuloa sovellukseen';
 
@@ -201,6 +218,9 @@ class SFi extends S {
 
   @override
   String get confirm => 'Vahvistaa';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => 'Vahvista poistuminen';
@@ -935,6 +955,8 @@ class SFi extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'Kuljettajan pitäisi olla perillä minä hetkenä hyvänsä';
+
+
 
   @override
   String get deleteAccount => 'Poista tili';

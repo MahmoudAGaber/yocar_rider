@@ -35,7 +35,7 @@ class _RideOptionsSheetState extends State<RideOptionsSheet> {
   Widget build(BuildContext context) {
     return AppResponsiveDialog(
       type: context.responsive(DialogType.bottomSheet, xl: DialogType.dialog),
-      header: (Ionicons.cog, context.translate.rideOptions, null),
+      header: (Icon(Ionicons.cog), context.translate.rideOptions, null),
       onBackPressed: () => Navigator.of(context).pop(null),
       primaryButton: waitTime == widget.waitTime
           ? null

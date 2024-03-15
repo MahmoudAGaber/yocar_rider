@@ -931,7 +931,7 @@ class $AssetsCountriesGen {
       const AssetGenImage('assets/countries/kanuri.svg.png');
 
   /// File path: assets/countries/ke.svg.png
-  AssetGenImage get keSvg => const AssetGenImage('assets/countries/ke.svg.png');
+  AssetGenImage get keSvg => const AssetGenImage('assets/countries/ge.svg.png');
 
   /// File path: assets/countries/kg.svg.png
   AssetGenImage get kgSvg => const AssetGenImage('assets/countries/kg.svg.png');

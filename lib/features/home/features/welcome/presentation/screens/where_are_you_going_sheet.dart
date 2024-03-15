@@ -36,6 +36,8 @@ class _WhereAreYouGoingSheetState extends State<WhereAreYouGoingSheet> {
   @override
   Widget build(BuildContext context) {
     return AppCardSheet(
+      height: 440,
+      minSize: .22,
       child: BlocProvider.value(
         value: locator<DestinationSuggestionsCubit>(),
         child: BlocListener<AuthBloc, AuthState>(
@@ -46,6 +48,7 @@ class _WhereAreYouGoingSheetState extends State<WhereAreYouGoingSheet> {
           },
           child: Padding(
             padding: EdgeInsets.only(
+              top: 8,
               left: 16,
               right: 16,
               bottom: MediaQuery.of(context).padding.bottom,
@@ -57,15 +60,15 @@ class _WhereAreYouGoingSheetState extends State<WhereAreYouGoingSheet> {
                 CardHandle(
                   onPressed: () {
                     setState(() {
-                      isExpanded = !isExpanded;
+                    //  isExpanded = !isExpanded;
                     });
                   },
                 ),
-                Text(
-                  context.translate.whereAreYouGoing,
-                  style: context.headlineSmall,
-                ),
-                const SizedBox(height: 16),
+                // Text(
+                //   context.translate.whereAreYouGoing,
+                //   style: context.headlineSmall,
+                // ),
+                const SizedBox(height: 8),
                 WhereAreYouGoingButton(
                   onPressed: () {
                     locator<HomeCubit>().showWaypoints(waypoints: widget.waypoints);
@@ -74,7 +77,7 @@ class _WhereAreYouGoingSheetState extends State<WhereAreYouGoingSheet> {
                 const SizedBox(height: 16),
                 AnimatedCrossFade(
                   duration: AnimationDuration.pageStateTransitionMobile,
-                  crossFadeState: isExpanded ? CrossFadeState.showFirst : CrossFadeState.showSecond,
+                  crossFadeState:CrossFadeState.showFirst,
                   secondChild: const SizedBox.shrink(),
                   firstChild: BlocBuilder<DestinationSuggestionsCubit, DestinationSuggestionsState>(
                     builder: (context, state) => AnimatedSwitcher(
@@ -88,7 +91,6 @@ class _WhereAreYouGoingSheetState extends State<WhereAreYouGoingSheet> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Container(
-                              constraints: const BoxConstraints(maxHeight: 100),
                               child: ListView.separated(
                                 shrinkWrap: true,
                                 padding: EdgeInsets.zero,
@@ -127,7 +129,6 @@ class _WhereAreYouGoingSheetState extends State<WhereAreYouGoingSheet> {
                               ),
                               const SizedBox(height: 12),
                               SizedBox(
-                                height: 130,
                                 child: ListView.separated(
                                   shrinkWrap: true,
                                   padding: EdgeInsets.zero,

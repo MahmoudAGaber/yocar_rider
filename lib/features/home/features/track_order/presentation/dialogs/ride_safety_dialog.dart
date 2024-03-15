@@ -23,7 +23,7 @@ class RideSafetyDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppResponsiveDialog(
       type: context.responsive(DialogType.bottomSheet, xl: DialogType.dialog),
-      header: (Ionicons.shield, context.translate.rideSafety, null),
+      header: (Icon(Ionicons.shield), context.translate.rideSafety, null),
       primaryButton: AppBorderedButton(
         onPressed: () {
           Navigator.of(context).pop();

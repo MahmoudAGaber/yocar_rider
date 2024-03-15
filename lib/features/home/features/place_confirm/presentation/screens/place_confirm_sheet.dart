@@ -25,6 +25,8 @@ class PlaceConfirmSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppCardSheet(
+      height: 220,
+      minSize: .8,
       child: SafeArea(
         top: false,
         child: Padding(
@@ -47,7 +49,7 @@ class PlaceConfirmSheet extends StatelessWidget {
                             loaded: (value) {
                               return Text(
                                 value.data.address,
-                                style: context.titleMedium,
+                                style: context.titleSmall,
                                 textAlign: TextAlign.start,
                               );
                             },

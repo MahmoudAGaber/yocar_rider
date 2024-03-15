@@ -7,6 +7,9 @@ class SNl extends S {
   SNl([String locale = 'nl']) : super(locale);
 
   @override
+  String get backButton => 'Back';
+
+  @override
   String get welcomeTitle => 'Welkom bij de app';
 
   @override
@@ -118,6 +121,20 @@ class SNl extends S {
   }
 
   @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message'; @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+
+  @override
   String get timePastDue => 'Verlopen';
 
   @override
@@ -201,6 +218,9 @@ class SNl extends S {
 
   @override
   String get confirm => 'Bevestigen';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => 'Bevestig het afleveren';
@@ -935,6 +955,7 @@ class SNl extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'De chauffeur kan elk moment arriveren';
+
 
   @override
   String get deleteAccount => 'Account verwijderen';

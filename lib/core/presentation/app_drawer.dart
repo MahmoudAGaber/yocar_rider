@@ -32,7 +32,7 @@ class AppDrawer extends StatelessWidget {
         ),
       ],
       child: Container(
-        width: 280,
+        width: 290,
         decoration: const BoxDecoration(
           color: ColorPalette.neutralVariant99,
           borderRadius: BorderRadius.horizontal(

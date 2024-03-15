@@ -32,7 +32,7 @@ class _EnterCouponDialogState extends State<EnterCouponDialog> {
   Widget build(BuildContext context) {
     return AppResponsiveDialog(
       header: (
-        Ionicons.ticket,
+      Icon(Ionicons.ticket),
         context.translate.enterCoupon,
         context.translate.enterCouponDescription,
       ),

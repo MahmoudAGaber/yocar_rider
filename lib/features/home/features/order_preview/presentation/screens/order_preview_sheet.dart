@@ -114,6 +114,8 @@ class _OrderPreviewSheetState extends State<OrderPreviewSheet> with TickerProvid
                 orderSubmitted: (value) => const SizedBox.shrink(),
                 error: (value) => Text(value.message),
                 loading: (value) => AppCardSheet(
+                  height: 600,
+                  minSize: .5,
                   child: Assets.lottie.loading.lottie(
                     width: double.infinity,
                     height: 400,

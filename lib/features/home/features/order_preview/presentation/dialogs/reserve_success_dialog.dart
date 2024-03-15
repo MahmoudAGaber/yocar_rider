@@ -16,7 +16,7 @@ class ReserveSuccessDialog extends StatelessWidget {
           },
           child: Text(context.translate.ok)),
       header: (
-        Ionicons.checkmark_circle,
+      Icon(Ionicons.checkmark_circle),
         context.translate.reserveRide,
         context.translate.reserveRideMessageSuccess,
       ),

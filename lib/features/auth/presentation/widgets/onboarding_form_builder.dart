@@ -37,7 +37,7 @@ class OnboardingFormBuilder {
 
   Widget buildInformationFooter(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height*.33,
+      height: MediaQuery.of(context).size.height*.35,
       child: Column(
         children: [
           const SizedBox(
@@ -53,7 +53,7 @@ class OnboardingFormBuilder {
             height: 16,
           ),
           SizedBox(
-            width: MediaQuery.of(context).size.width*.66,
+            width: MediaQuery.of(context).size.width*.7,
             child: Text(
               onBoardingItem(context).description,
               style: context.bodyMedium?.copyWith(

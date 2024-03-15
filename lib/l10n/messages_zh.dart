@@ -7,6 +7,22 @@ class SZh extends S {
   SZh([String locale = 'zh']) : super(locale);
 
   @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message'; @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+  @override
+  String get backButton => 'Back';
+
+  @override
   String get welcomeTitle => '欢迎使用该应用程序';
 
   @override
@@ -201,6 +217,9 @@ class SZh extends S {
 
   @override
   String get confirm => '确认';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => '确认还车';
@@ -935,6 +954,7 @@ class SZh extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => '司机现在应该随时到达';
+
 
   @override
   String get deleteAccount => '删除帐户';

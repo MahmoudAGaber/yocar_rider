@@ -25,7 +25,7 @@ class CouponAppliedDialog extends StatelessWidget {
         ),
       ),
       header: (
-        Ionicons.ticket,
+      Icon(Ionicons.ticket),
         context.translate.couponApplied,
         context.translate.couponAppliedDescription,
       ),

@@ -7,6 +7,22 @@ class SNo extends S {
   SNo([String locale = 'no']) : super(locale);
 
   @override
+  String get call => 'Call';
+
+  @override
+  String get message => 'Message'; @override
+  String get cancelMyRide => 'Cancel my ride';
+
+  @override
+  String get waitMyRide => 'Wait for my ride';
+
+  @override
+  String get cancelTrip => 'Cancel Trip';
+
+  @override
+  String get backButton => 'Back';
+
+  @override
   String get welcomeTitle => 'Welcome to the app';
 
   @override
@@ -201,6 +217,9 @@ class SNo extends S {
 
   @override
   String get confirm => 'Confirm';
+
+  @override
+  String get confirmLocation => 'Confirm Location';
 
   @override
   String get confirmDropoff => 'Confirm drop-off';
@@ -453,7 +472,7 @@ class SNo extends S {
   String get saveChanges => 'Save changes';
 
   @override
-  String get rideHistory => 'Ride History';
+  String get rideHistory => 'RIDES';
 
   @override
   String get scheduledRides => 'Scheduled rides';
@@ -935,6 +954,7 @@ class SNo extends S {
 
   @override
   String get driverShouldHaveArrivedNotice => 'Driver should be arrived in any moment now';
+
 
   @override
   String get deleteAccount => 'Delete Account';

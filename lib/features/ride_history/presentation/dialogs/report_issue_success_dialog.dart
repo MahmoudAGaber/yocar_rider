@@ -12,7 +12,7 @@ class ReportIssueSuccessDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppResponsiveDialog(
       header: (
-        Ionicons.document_text,
+        Icon(Ionicons.document_text),
         context.translate.reportSubmitted,
         context.translate.reportSubmittedDescription,
       ),

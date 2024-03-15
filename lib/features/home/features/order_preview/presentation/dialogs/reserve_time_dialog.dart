@@ -19,7 +19,7 @@ class _ReserveTimeDialogState extends State<ReserveTimeDialog> {
     return AppResponsiveDialog(
       type: context.responsive(DialogType.bottomSheet, xl: DialogType.dialog),
       header: (
-        Ionicons.calendar,
+      Icon(Ionicons.calendar,),
         context.translate.reserveRide,
         context.translate.reserveRideMessage,
       ),

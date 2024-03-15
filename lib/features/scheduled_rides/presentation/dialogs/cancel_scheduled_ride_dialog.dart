@@ -23,7 +23,7 @@ class CancelScheduledRideDialog extends StatelessWidget {
     return AppResponsiveDialog(
       type: context.responsive(DialogType.bottomSheet, xl: DialogType.dialog),
       header: (
-        Ionicons.trash,
+        Icon(Ionicons.trash),
         context.translate.cancelRide,
         context.translate.cancelRideMessage,
       ),

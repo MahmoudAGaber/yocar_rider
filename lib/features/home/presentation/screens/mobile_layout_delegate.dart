@@ -31,7 +31,7 @@ class MobileLayoutDelegate extends MultiChildLayoutDelegate {
         mapLayoutId,
         BoxConstraints(
           maxWidth: size.width,
-          maxHeight: size.height - cardSize.height + 20,
+          maxHeight: size.height ,
         ),
       );
       positionChild(mapLayoutId, Offset.zero);

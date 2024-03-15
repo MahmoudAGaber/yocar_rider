@@ -9,6 +9,7 @@ import 'package:flutter_common/core/presentation/markers/app_marker_address.dart
 import 'package:flutter_common/core/presentation/my_location_button.dart';
 import 'package:generic_map/generic_map.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:latlong2/latlong.dart';
 import 'package:rider_flutter/config/locator/locator.dart';
 import 'package:rider_flutter/core/blocs/location.dart';
 import 'package:rider_flutter/core/blocs/place_lookup.dart';
@@ -84,6 +85,8 @@ class _LocateFavoriteLocationScreenMobileState extends State<LocateFavoriteLocat
                 initial: (_) => true,
               );
               return AppCardSheet(
+                height: 300,
+                minSize: .5,
                 isFullScreen: !isInitial,
                 child: Padding(
                   padding: const EdgeInsets.all(16).copyWith(top: isInitial ? 0 : 32),

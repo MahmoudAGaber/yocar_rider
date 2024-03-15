@@ -46,7 +46,7 @@ class SendSOSDialog extends StatelessWidget {
         child: Text(context.translate.confirmAndSendSOS),
       ),
       header: (
-        Ionicons.shield,
+        Icon(Ionicons.shield),
         context.translate.sos,
         context.translate.sendSOSMessage,
       ),

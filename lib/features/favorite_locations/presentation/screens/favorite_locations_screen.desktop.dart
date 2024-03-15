@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_common/config/constants.dart';
 import 'package:generic_map/generic_map.dart';
+import 'package:latlong2/latlong.dart';
 import 'package:rider_flutter/config/locator/locator.dart';
 import 'package:rider_flutter/core/blocs/settings.dart';
 import 'package:rider_flutter/core/datasources/geo_datasource.dart';
