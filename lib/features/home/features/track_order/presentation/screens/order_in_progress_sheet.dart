@@ -34,10 +34,11 @@ class OrderInProgressSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(order.status);
     return Container(
       child: AppCardSheet(
-        height: order.status.viewMode.name == "inProgress"? 455 : 675,
-        minSize: order.status.viewMode.name == "inProgress"? .37 : .26,
+        height: order.status == OrderStatus.driverAccepted? 675 : 455,
+        minSize: order.status == OrderStatus.driverAccepted? .37 : .37,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
