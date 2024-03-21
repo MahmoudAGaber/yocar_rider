@@ -54,9 +54,8 @@ class MyApp extends StatelessWidget {
               common_messages.S.delegate,
             ],
             supportedLocales: S.supportedLocales,
-            routerConfig: locator<AppRouter>().config(
-              navigatorObservers: () => [RouterObserver()],
-            ),
+            routerDelegate: locator<AppRouter>().delegate(),
+            routeInformationParser: locator<AppRouter>().defaultRouteParser(),
           );
         },
       ),

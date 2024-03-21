@@ -19,7 +19,7 @@ class SRu extends S {
   String get waitMyRide => 'Посещает mon trajet';
 
   @override
-  String get cancelTrip => 'Отменить поездку';
+  String get cancelTrip => 'Отменить мою поездку';
 
   @override
   String get backButton=> 'Назад';

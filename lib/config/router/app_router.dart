@@ -31,6 +31,7 @@ import 'package:rider_flutter/features/settings/presentation/screens/settings_sc
 import 'package:rider_flutter/features/wallet/presentation/screens/wallet_parent_screen.dart';
 import 'package:rider_flutter/features/wallet/presentation/screens/wallet_screen.dart';
 
+import '../../features/SplachScreen.dart';
 import 'onboarding_guard.dart';
 
 part 'app_router.gr.dart';
@@ -46,9 +47,14 @@ class AppRouter extends _$AppRouter {
           page: NavigationRoute.page,
           children: [
             AutoRoute(
+              page: SplachRoute.page,
+              path: 'splach',
+              initial: true,
+            ),
+            AutoRoute(
               page: HomeRoute.page,
               path: 'home',
-              initial: true,
+              //initial: true,
               guards: [
                 OnboardingGuard(),
               ],

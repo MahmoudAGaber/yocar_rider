@@ -20,7 +20,7 @@ class SFr extends S {
   String get waitMyRide => 'Attends mon trajet';
 
   @override
-  String get cancelTrip => 'Annuler le voyage';
+  String get cancelTrip => 'Annuler mon trajet';
 
   @override
   String get backButton=> 'Dos';

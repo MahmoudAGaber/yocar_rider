@@ -19,7 +19,7 @@ class SAr extends S {
   String get waitMyRide => 'انتظر رحلتي';
 
   @override
-  String get cancelTrip => 'إلغاء الرحلة';
+  String get cancelTrip => 'إلغاء رحلتي';
 
   @override
   String get backButton=> 'رجوع';

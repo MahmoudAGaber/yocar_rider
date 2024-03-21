@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_common/core/color_palette/color_palette.dart';
+import 'package:flutter_common/core/presentation/buttons/app_bordered_button.dart';
 import 'package:flutter_common/core/presentation/buttons/app_primary_button.dart';
 import 'package:flutter_common/core/presentation/card_handle.dart';
 import 'package:flutter_common/core/presentation/responsive_dialog/app_dialog_header.dart';
@@ -42,12 +43,16 @@ class LookingForDriverSheet extends StatelessWidget {
 
             SizedBox(
               width: MediaQuery.of(context).size.width*.9,
-              child: AppPrimaryButton(
-                color: PrimaryButtonColor.error,
+              child: AppBorderedButton(
+                title: context.translate.cancel,
+                borderColor: ColorPalette.error30,
+                buttonColor: ColorPalette.error80,
+                textColor: ColorPalette.error30,
+                isPrimary: false,
                 onPressed: () {
                   locator<TrackOrderBloc>().cancelRide(cancelReasonId: null, cancelReasonNote: null);
                 },
-                child: Text(context.translate.cancel),
+
               ),
             ),
           ],

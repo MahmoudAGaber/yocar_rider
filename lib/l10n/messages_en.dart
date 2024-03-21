@@ -19,7 +19,7 @@ class SEn extends S {
   String get waitMyRide => 'Wait for my ride';
 
   @override
-  String get cancelTrip => 'Cancel Trip';
+  String get cancelTrip => 'Cancel my ride';
 
   @override
   String get backButton=> 'Back';

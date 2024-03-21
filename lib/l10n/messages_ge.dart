@@ -20,7 +20,7 @@ class SGe extends S {
   String get waitMyRide => 'დაელოდე ჩემს მგზავრობას';
 
   @override
-  String get cancelTrip => 'გააუქმეთ მოგზაურობა';
+  String get cancelTrip => 'გააუქმე ჩემი მგზავრობა';
 
   @override
   String get backButton=> 'უკან';
