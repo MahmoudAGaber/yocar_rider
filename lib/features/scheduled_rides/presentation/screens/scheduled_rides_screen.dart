@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_common/core/presentation/responsive_dialog/app_top_bar.dart';
 import 'package:rider_flutter/config/locator/locator.dart';
 import 'package:rider_flutter/config/router/app_router.dart';
 import 'package:flutter_common/core/theme/animation_duration.dart';
@@ -38,18 +39,9 @@ class _ScheduledRidesScreenState extends State<ScheduledRidesScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              context.responsive(
-                AppBackButton(
-                  onPressed: () {
-                    context.router.pop();
-                  },
-                ),
-                xl: const SizedBox.shrink(),
-              ),
-              SizedBox(height: context.responsive(16, xl: 84)),
-              Text(
-                context.translate.scheduledRides,
-                style: context.headlineSmall,
+              AppTopBar(
+                title: context.translate.scheduledRides,
+                // subtitle: context.translate.favoriteLocationsSubtitle,
               ),
               const SizedBox(height: 24),
               Expanded(

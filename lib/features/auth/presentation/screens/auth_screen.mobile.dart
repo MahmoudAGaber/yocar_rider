@@ -17,7 +17,7 @@ class AuthScreenMobile extends StatelessWidget {
       body: Column(children: [
         Container(
           width: double.infinity,
-          color: ColorPalette.primary99,
+          //color: ColorPalette.primary99,
           child: SafeArea(
             bottom: false,
             child: Column(

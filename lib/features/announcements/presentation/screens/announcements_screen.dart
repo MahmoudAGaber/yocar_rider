@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_common/core/presentation/responsive_dialog/app_top_bar.dart';
 import 'package:rider_flutter/config/locator/locator.dart';
 import 'package:flutter_common/core/theme/animation_duration.dart';
 import 'package:rider_flutter/core/extensions/extensions.dart';
@@ -46,14 +47,9 @@ class _AnnouncementsScreenState extends State<AnnouncementsScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    context.responsive(
-                      AppBackButton(onPressed: () => context.router.pop()),
-                      xl: const SizedBox(),
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      context.translate.announcements,
-                      style: context.headlineSmall,
+                    AppTopBar(
+                      title: context.translate.announcements,
+                      // subtitle: context.translate.favoriteLocationsSubtitle,
                     ),
                     const SizedBox(height: 16),
                     Expanded(

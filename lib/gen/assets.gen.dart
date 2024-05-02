@@ -2040,7 +2040,7 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/announcement-empty.png
   AssetGenImage get announcementEmpty =>
-      const AssetGenImage('assets/images/announcement-empty.png');
+      const AssetGenImage('assets/images/announcement.png');
 
   /// File path: assets/images/background-announcements.png
   AssetGenImage get backgroundAnnouncements =>
